@@ -5,7 +5,7 @@ Page({
   search: e => {
     let content = e.detail.value
     wx.request({
-      url: `https://api.shanbay.com/bdc/search/?word=${content}`,
+      url: `https://apiv3.shanbay.com/wordsapp/words/vocab?word=${content}`,
       data: {},
       method: 'GET',
       success: res => {

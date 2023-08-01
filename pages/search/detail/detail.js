@@ -5,7 +5,7 @@ Page({
     const word = option.content
 
     wx.request({
-      url: `https://api.shanbay.com/bdc/search/?word=${word}`,
+      url: `https://apiv3.shanbay.com/wordsapp/words/vocab?word=${word}`,
       data: {},
       method: 'GET',
       success: res => {
